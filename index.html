@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div class="logo">
+          <h1>Abhay <span id="rag">Raghav</span></h1>
+        </div>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#service">SERVICES</a></li>
+          <li><a href="#work">WORKS</a></li>
+          <li><a href="#contact">CONTACT Us</a></li>
+        </ul>
+      </nav>
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener("click", () => {
+          //Animate Links
+          navLinks.classList.toggle("open");
+          links.forEach((link) => {
+            link.classList.toggle("fade");
+          });
+
+          //Hamburger Animation
+          hamburger.classList.toggle("toggle");
+        });
+      </script>
+      <div class="container-1" id="home">
+        <div class="con-1-box-1">
+          <h1 class="text">
+            Hi,Myself <span>Abhay</span> <br />And I'm a <br />
+            <span class="auto-type"> </span>
+          </h1>
+
+          <p>
+            Hi! I'm a UI/UX Developer - creating bold & brave <br />
+            interface design for companies all across the world.
+          </p>
+          <div class="buttons">
+            <!-- <a href="MY-Resume.pdf"><button id="cv">Download CV</button></a> -->
+            <div class="icons">
+              <div class="facebook-box">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100038200869527&mibextid=9R9pXO"
+                >
+                  <i class="fa-brands fa-facebook" id="face"></i
+                ></a>
+              </div>
+              <div class="insta-box">
+                <a
+                  href="https://instagram.com/abhay_thakur__00?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+                  ><i class="fa-brands fa-instagram" id="insta"></i
+                ></a>
+              </div>
+              <div class="linkdin-box">
+                <a href="https://www.linkedin.com/in/abhay-raghav-7b5467258/"
+                  ><i class="fa-brands fa-linkedin" id="link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="con-1-box-2">
+          <div class="circle">
+            <!-- <img src="newpic.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- {/* about container */} -->
+      <div class="about-container" id="about">
+        <div class="about-img">
+          <!-- <img src="bg-2.png" alt=""> -->
+        </div>
+
+        <div class="about-content">
+          <h2>About <span>Me</span></h2>
+          <h3>Frontend Developer</h3>
+          <p>
+            Certainly! Here are some suggested words for a frontend developer's
+            portfolio: Welcome to Abhay's Portfolio I am a passionate frontend
+            developer dedicated to crafting exceptional user experiences through
+            clean, efficient code and intuitive designs. With 1years of
+            experience in the industry, I thrive on turning creative ideas into
+            functional, user-friendly interfaces.you'll find a showcase of
+            projects that demonstrate my expertise in HTML, CSS, and JavaScript.
+            From responsive layouts that adapt flawlessly across devices to
+            interactive elements that engage users, each project reflects my
+            commitment to excellence in frontend development.
+          </p>
+          <button><a href="#" class="read">Read more</a></button>
+        </div>
+      </div>
+
+      <div class="container-2" id="service">
+        <div class="con-2-box-1">
+          <div class="contant">
+            <h1>
+              Services I <br />
+              Offer
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Rerum nesciunt voluptates <br />
+              illum laudantium, ipsum repellat.
+            </p>
+          </div>
+        </div>
+        <div class="con-2-box-2">
+          <!-- {/* 1st */} -->
+          <div class="contant-2">
+            <div class="h1-p-box">
+              <h2>01/</h2>
+
+              <h1>
+                <!-- {" "} -->
+                Web UI/UX <br />
+                Devlopment
+              </h1>
+            </div>
+            <div class="button-box">
+              <p>Explore</p>
+              <button id="icon">
+                <a href="#work">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <!-- {/* 2nd 0 */} -->
+
+          <div class="contant-2">
+            <div class="h1-p-box">
+              <h2>02/</h2>
+
+              <h1>
+                <!-- {" "} -->
+                Mobile App UI/ <br />
+                UX Devlopment
+              </h1>
+            </div>
+            <div class="button-box">
+              <p>Explore</p>
+              <button id="icon">
+                <a href="#work"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3rd -->
+          <!-- 
+          {/* <div class="contant-2">
+            <div class="h1-p-box">
+              <h2>03/</h2>
+
+              <h1>
+                Dashboard &<br />
+                Saas Design
+              </h1>
+            </div>
+            <div class="button-box">
+              <p>Explore</p>
+              <button id="icon">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div> */} -->
+          <!--  -->
+        </div>
+      </div>
+
+      <!-- container-3 start here -->
+
+      <div class="container-4" id="work">
+        <div class="con-4-box-1">
+          <h1>
+            Latest <br />
+            <span>Projects</span>
+          </h1>
+          <h3></h3>
+          <h2>
+            Plantshop Landing <br />
+            Page Design
+          </h2>
+          <h4>Web/Landing Page</h4>
+          <div class="my-project-img">
+            <a href="https://buyfirst.vercel.app/"
+              ><img src="my-web1st.png" alt=""
+            /></a>
+
+            <div class="portfolio-layer">
+              <a href="https://buyfirst.vercel.app/"><h4>Web Design</h4></a>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="con-4-box-2">
+          <h1></h1>
+          <h2>
+            VPS Hosting <br />
+            Website Design
+          </h2>
+          <h4>Web/Multipage Website</h4>
+          <div class="my-project-img">
+            <img src="my-web2nd.png" alt="" />
+
+            <div class="portfolio-layer">
+              <a href="https://backbencher-liart.vercel.app/"
+                ><h4 id="web-1">Web Design</h4></a
+              >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="con-4-box-3">
+          <h1></h1>
+          <h2>
+            Mobile App UI/ <br />
+            UX Devlopment
+          </h2>
+          <h4>Web/Landing Page</h4>
+          <div class="my-project-img">
+            <img src="project-3.png" alt="" />
+
+            <div class="portfolio-layer">
+              <a href="https://todo-project-2-ruby.vercel.app/"
+                ><h4 id="web-2">Web Design</h4></a
+              >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="con-4-box-1">
+          <h2>
+            Plantshop Landing <br />
+            Page Design
+          </h2>
+          <h4>Web/Landing Page</h4>
+          <div class="my-project-img">
+            <a href="#"><img src="project-3.png" alt="" /></a>
+
+            <div class="portfolio-layer">
+              <a href="https://todo-project-2-ruby.vercel.app/"
+                ><h4>Web Design</h4></a
+              >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="con-4-box-2">
+          <h2>
+            VPS Hosting <br />
+            Website Design
+          </h2>
+          <h4>Web/Multipage Website</h4>
+          <div class="my-project-img">
+            <img src="my-web2nd.png" alt="" />
+
+            <div class="portfolio-layer">
+              <a href="https://buyfirst.vercel.app/"
+                ><h4 id="web-1">Web Design</h4></a
+              >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="con-4-box-3">
+          <h2>
+            Mobile App UI/ <br />
+            UX Devlopment
+          </h2>
+          <h4>Web/Landing Page</h4>
+          <div class="my-project-img">
+            <img src="project-3.png" alt="" />
+
+            <div class="portfolio-layer">
+              <a href="https://buyfirst.vercel.app/"
+                ><h4 id="web-2">Web Design</h4></a
+              >
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="container-3" id="contact">
+        <div class="con-3-box-1">
+          <div class="con-3-contant">
+            <h1>
+              Let's Discuss
+              <br />
+              Your Project
+            </h1>
+            <!-- <p id="line-1"></p>
+            <div class="con-3-contant-box-1">
+              <i class="fa-solid fa-envelope" id="email"></i>
+              <div class="email-box">
+                <h5 id="em">Email</h5>
+                <h3>raghavabhay077@gmail.com</h3>
+              </div>
+            </div>
+
+            <p id="line-1"></p>
+            <div class="con-3-contant-box-2">
+              <i class="fa-solid fa-location-dot" id="location"></i>
+              <div class="email-box">
+                <h5 id="lo">Location</h5>
+                <h3>
+                
+                  11D/A8 Ayodhya Nagar Mandi <br />
+                  Samiti Rambagh Agra
+                </h3>
+              </div>
+            </div> -->
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="connect">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email id"
+                  required
+                />
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="Phone no."
+                  required
+                />
+                <textarea
+                  id="message"
+                  rows="4"
+                  cols="58"
+                  placeholder="How can we help you?"
+                ></textarea>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="con-3-box-2">
+          <div class="hii-box">
+            <h2>Say Hi!</h2>
+            <div id="big-icon">
+              <!-- <i class="fa-brands fa-whatsapp"></i> -->
+              <i
+                onclick="sendwhatsapp();"
+                id="ic"
+                class="fa-brands fa-whatsapp fa-beat-fade"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="last">
+        <h4>@2024 All Right Reserved</h4>
+        <h4>Designed By Abhay Raghav</h4>
+        <h4>raghavabhay077@gmail.com</h4>
+      </div>  -->
+    </div>
+
+    <!-- whatsapp ki js Start here -->
+    <script>
+      function sendwhatsapp() {
+        var phonenumber = "+916398400159";
+        var url =
+          "https://wa.me/" + phonenumber + "?text=" + "Hi" + name + "%0a";
+        window.open(url, "_blank").focus();
+      }
+    </script>
+
+    <!-- whatsapp ki js End here -->
+
+    <!-- Email ki js Start here -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "abhayraghav11052003@gmail.com",
+          Password: "Abhay@12345",
+          To: "raghavabhay077@gmail.com",
+          From: document.getElementById("email").value,
+          Subject: "New Contact Form Enquiry",
+          Body:
+            "Name: " +
+            document.getElementById("name").value +
+            "</br> Email: " +
+            document.getElementById("email").value +
+            "</br> Phone no: " +
+            document.getElementById("phone").value +
+            "</br> Message: " +
+            document.getElementById("message").value,
+        }).then((message) => alert("Message Sent Succesfully"));
+      }
+    </script>
+
+    <!-- Email ki js End here -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Frontend Developer", "Web Designer"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
